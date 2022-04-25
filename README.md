@@ -1,16 +1,16 @@
-PACKAGE
-=======
+miniaes-js
+==========
 
-Greymass TypeScript library template, intended for libraries that work in any JavaScript context (node.js, Browser, React native), `@types/node` are installed only for tests, don't rely on any node.js types or imports inside `src/` (no `buffer`, `crypto` imports etc, they can be filled for browser but will bloat the bundle 100x)
+Fast AES encryption and decryption in JavaScript. Only CBC mode, because that's what we need, this library is largely based on [asmcrypto.js](https://github.com/asmcrypto/asmcrypto.js).
 
 ## Installation
 
-The `PACKAGE` package is distributed as a module on [npm](https://www.npmjs.com/package/PACKAGE).
+The `@greymass/miniaes` package is distributed as a module on [npm](https://www.npmjs.com/package/@greymass/miniaes).
 
 ```
-yarn add PACKAGE
+yarn add @greymass/miniaes
 # or
-npm install --save PACKAGE
+npm install --save @greymass/miniaes
 ```
 
 ## Usage

@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-SRC_FILES := $(shell find src -name '*.ts')
+SRC_FILES := $(shell find src -name '*.(ts|js)')
 TEST_FILES := $(wildcard test/*.ts)
 BIN := ./node_modules/.bin
 MOCHA_OPTS := -u tdd -r ts-node/register -r tsconfig-paths/register --extension ts
